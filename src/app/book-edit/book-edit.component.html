@@ -1,0 +1,46 @@
+  <div *ngIf="book" class="container">
+    <h2>{{book.name | uppercase}} Details</h2>
+    <div class="value"><span>ID: </span>{{book.id}}</div>
+    <div>
+      <div>
+        <label for="book-name">Name of the book: </label>
+        <input class="form-control" id="book-name" [(ngModel)]="book.name" placeholder="Book name"/>
+      </div>
+
+      <div>
+        <label for="book-author">Author(s) of the book: </label>
+        <input class="form-control" id="book-author" [(ngModel)]="book.author" placeholder="Author"/>
+      </div>
+
+      <div>
+        <label for="book-year">Year: </label>
+        <input class="form-control" id="book-year" [(ngModel)]="book.year" placeholder="Year"/>
+      </div>
+
+      <div>
+        <label for="book-type">Type: </label>
+        <select class="form-control" id="book-type" [(ngModel)]="book.type" (change) = "selectTypeChangeHandler">
+          <option value="paper">Paper</option>
+          <option value="ebook">EBook</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="book-categorie">Categorie: </label>
+        <select class="form-control" id="book-categorie" [(ngModel)]="book.categorie" (change) = "selectCategorieChangeHandler">
+          <option value="unset">Choose...</option>
+          <option value="Crime">Crime</option>
+          <option value="Literature">Literature</option>
+          <option value="Romantic">Romantic</option>
+          <option value="Sci-fi">Sci-fi</option>
+          <option value="Historical">Historical</option>
+          <option value="Political">Political</option>
+          <option value="Drama">Drama</option>
+          <option value="Kids">Kids</option>
+          <option value="Young">Young</option>
+        </select>
+      </div>
+    </div>
+    <button class="btn btn-light btn-outline-dark" (click)="goBack()">Back</button>
+    <button class="btn btn-light btn-outline-dark" (click)="save()">Save</button>
+  </div>

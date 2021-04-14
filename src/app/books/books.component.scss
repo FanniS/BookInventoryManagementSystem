@@ -1,0 +1,50 @@
+h2 {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(130, 41, 189);
+}
+
+.books {
+  margin: 5px;
+  padding: 0;
+}
+
+.books a {
+  color: #333;
+  background-color: rgb(208, 191, 212);
+  padding: 3px;
+  margin: 5px;
+  display: block;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.books a:hover {
+  color: #2c3a41;
+  background-color: #d7c7e0;
+}
+
+.books a:active {
+  background-color: #525252;
+  color: #fafafa;
+}
+
+.books .badge {
+  font-size: small;
+  color: white;
+  padding: 5px;
+  background-color:#310b42;
+  text-align: center;
+}
+
+.add-button {
+  margin: 5px;
+}
+
+.add-button:hover {
+  color: white;
+  background-color: #610796;
+}
+
+ul {
+  list-style: none;
+}

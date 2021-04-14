@@ -1,0 +1,53 @@
+label {
+  margin: 5px;
+  color: #30283b;
+  font-weight: bold;
+}
+
+button {
+  margin: 5px;
+}
+
+button:hover {
+  color: white;
+  background-color: #610796;
+}
+
+.image{
+  width: 200px;
+  height: 200px;
+}
+
+span {
+  margin: 5px;
+  color: #30283b;
+  font-weight: bold;
+}
+
+h2 {
+  margin: 5x;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #54219b;
+}
+
+.value {
+  color: #54219b;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #54219b;
+}
+
+.btn-primary:hover {
+  background-color: #290a55;
+}
+
+
+#modalheader {
+  background-color: lavender;
+}
+
+#modal {
+  background-color: lavenderblush;
+}

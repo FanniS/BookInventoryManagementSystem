@@ -1,0 +1,40 @@
+label {
+  margin: 5px;
+  color: #30283b;
+  font-weight: bold;
+}
+input {
+  padding: 2px;
+  color: #54219b;
+}
+
+select {
+  padding: 2px;
+  color: #54219b;
+}
+
+button {
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+button:hover {
+  color: white;
+  background-color: #610796;
+}
+
+h2 {
+  margin: 5x;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #54219b;
+}
+
+.container {
+  width: 400px;
+}
+
+::placeholder {
+  color: #54219b;
+}
+

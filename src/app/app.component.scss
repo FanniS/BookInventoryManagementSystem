@@ -1,0 +1,25 @@
+h1 {
+  margin-bottom: 0;
+  color:indigo;
+  text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: italic;
+  background-color: lavender;
+}
+nav a {
+  padding: 1rem;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: lavender;
+  color: #3d3d3d;
+  border-radius: 4px;
+  margin: 10px;
+}
+nav a:hover {
+  color: white;
+  background-color:mediumpurple;
+}
+nav a.active {
+  background-color: black;
+}

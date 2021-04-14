@@ -1,0 +1,60 @@
+<div *ngIf="book" class="container d-flex justify-content-around">
+
+  <div>
+    <h2>{{book.name | uppercase}} Details</h2>
+    <div class="value"><span>ID: </span>{{book.id}}</div>
+    <div>
+      <div>
+        <label>Name of the book: </label>
+        <label class="value">{{book.name}}</label>
+      </div>
+
+      <div>
+        <label>Author(s) of the book: </label>
+        <label class="value">{{book.author}}</label>
+      </div>
+
+      <div>
+        <label for="book-year">Year: </label>
+        <label class="value">{{book.year}}</label>
+      </div>
+
+
+      <div>
+        <label for="book-type">Type: </label>
+        <label class="value">{{book.type}}</label>
+      </div>
+
+      <div>
+        <label for="book-categorie">Categorie: </label>
+        <label class="value">{{book.categorie}}</label>
+      </div>
+
+
+    </div>
+
+    <button class="btn btn-light btn-outline-dark" (click)="goBack()">Back</button>
+    <a routerLink="/books/{{book.id}}/edit"><button class="btn btn-light btn-outline-dark"  (click)="edit()">Edit</button></a>
+    <button type="button" class="btn btn-light btn-outline-dark" data-toggle="modal" data-target="#deleteModal" (click)="showModal(content)">Delete</button>
+
+    <ng-template #content let-modal>
+      <div id="modalheader" class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Delete</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="modal" class="modal-body">
+        <p>Are you sure you want to delete this book?</p>
+      </div>
+      <div id="modal" class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="modal.dismiss('Cancel click')">Cancel</button>
+        <button type="button" class="btn btn-primary" (click)="delete(book)">Yes</button>
+      </div>
+    </ng-template>
+
+  </div>
+  <div>
+    <img class="image" src= "https://www.pngkey.com/png/full/337-3371421_picture-transparent-tumblr-stickers.png" alt="Book Image">
+  </div>
+</div>

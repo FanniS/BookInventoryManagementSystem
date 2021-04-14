@@ -1,0 +1,46 @@
+<div class="container">
+  <h2>New book</h2>
+  <div>
+    <div>
+      <label id="book-name">Name of the book: </label>
+      <input class="form-control value" for="book-name" #bookName placeholder="Book name"/>
+    </div>
+
+    <div>
+      <label id="book-author">Author(s) of the book: </label>
+      <input class="form-control value" for="book-author" #bookAuthor placeholder="Author"/>
+    </div>
+
+    <div>
+      <label id="book-year">Year: </label>
+      <input class="form-control value" for="book-year" #bookYear placeholder="Year"/>
+    </div>
+
+    <div>
+      <label for="book-type">Type: </label>
+      <select class="form-control" id="book-type" #bookType>
+        <option value="paper">Paper</option>
+        <option value="ebook">EBook</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="book-categorie">Categorie: </label>
+      <select class="form-control" id="book-categorie" #bookCategorie>
+        <option value="unset" selected>Choose...</option>
+        <option value="Crime">Crime</option>
+        <option value="Literature">Literature</option>
+        <option value="Romantic">Romantic</option>
+        <option value="Sci-fi">Sci-fi</option>
+        <option value="Historical">Historical</option>
+        <option value="Political">Political</option>
+        <option value="Drama">Drama</option>
+        <option value="Kids">Kids</option>
+        <option value="Young">Young</option>
+      </select>
+    </div>
+
+  </div>
+  <button class="btn btn-light btn-outline-dark" (click)="goBack()">Back</button>
+  <button class="btn btn-light btn-outline-dark" (click)="save(bookName.value, bookAuthor.value, bookYear.value, bookType.value, bookCategorie.value)">Save</button>
+</div>

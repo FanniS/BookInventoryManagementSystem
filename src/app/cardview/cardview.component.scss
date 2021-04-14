@@ -1,0 +1,36 @@
+h2 {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(130, 41, 189);
+}
+
+.books-menu {
+  padding: 0;
+  margin: auto;
+  max-width: 1000px;
+}
+
+a {
+  background-color:rgba(43, 12, 100, 0.432);
+  border-radius: 2px;
+  padding: 1rem;
+  font-size: 1.2rem;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  min-width: 70px;
+  margin: 10px auto;
+  box-sizing: border-box;
+}
+
+@media (min-width: 600px) {
+  a {
+    width: 18%;
+    box-sizing: content-box;
+  }
+}
+
+a:hover {
+  background-color: rgb(36, 9, 61);
+}

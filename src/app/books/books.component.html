@@ -1,0 +1,17 @@
+<h2>Books</h2>
+
+<div class="d-flex justify-content-center">
+  <button class="add-button btn btn-light btn-outline-dark" (click)="navToAdd()">
+    Add new book
+  </button>
+</div>
+
+<div class="container">
+  <ul class="books">
+    <li *ngFor="let book of books">
+      <a routerLink="/books/{{book.id}}">
+        <span class="badge">{{book.id}}</span> {{book.name}}
+      </a>
+    </li>
+  </ul>
+</div>
